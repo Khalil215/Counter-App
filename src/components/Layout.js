@@ -8,14 +8,10 @@ export default function Layout() {
   return (
     <div>
       <Navbar />
-      <Vh>
-        <Outlet />
-      </Vh>
+
+      <Outlet />
+
       <Footer />
     </div>
   )
 }
-
-const Vh = styled.div`
-height: 75vh;
-`

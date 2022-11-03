@@ -40,7 +40,6 @@ body {
   background-image: linear-gradient(to bottom right, var(--light), var(--dark));
   height: 100vh;
   color: var(--dark);
-  overflow: hidden;
 }
 
 a {

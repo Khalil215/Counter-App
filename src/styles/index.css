@@ -40,6 +40,7 @@ body {
   background-image: linear-gradient(to bottom right, var(--light), var(--dark));
   height: 100vh;
   color: var(--dark);
+  overflow: hidden;
 }
 
 a {
@@ -97,5 +98,5 @@ input::-webkit-inner-spin-button {
  ::placeholder {
   font-family: Elight;
   color: var(--dark);
-  opacity: .8;
+  opacity: .4;
 }

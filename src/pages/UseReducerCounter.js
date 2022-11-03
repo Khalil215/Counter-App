@@ -64,7 +64,7 @@ export default function UseReducerCounter() {
   return (
     <>
       <Helmet>
-        <title>AltSchool Africa Second Semester Examination - useReducer Counter App</title>
+        <title>useReducer Counter App - AltSchool Africa Second Semester Examination</title>
         <meta name="description" content=" Implement a combination of states with a useReducer that implements a counter with the four evident features in the custom hook -  increment, decrement, reset, setValue." />
         <link rel="canonical" href="/counter2"/>
       </Helmet>

@@ -46,7 +46,7 @@ export default function UseCounterCounter() {
   return (
     <>
       <Helmet>
-        <title>AltSchool Africa Second Semester Examination - useCounter Counter App</title>
+        <title>useCounter Counter App - AltSchool Africa Second Semester Examination</title>
         <meta name="description" content=" Setup a custom counter hook with increment, decrement, reset, setValue functions with a valid UI " />
         <link rel="canonical" href="/counter1" />
       </Helmet>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <Helmet>
-      <title>AltSchool Africa Second Semester Examination - Counter App</title>
+      <title>Counter App - AltSchool Africa Second Semester Examination </title>
       <meta name="description" content=" Setup a custom counter hook with increment, decrement, reset, setValue functions with a valid UI and Implement a combination of states with a useReducer that implements a counter with the four evident features in the custom hook -  increment, decrement, reset, setValue." />
       <link rel="canonical" href="/" />
     </Helmet>

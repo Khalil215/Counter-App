@@ -9,7 +9,10 @@ export default function Footer() {
 }
 
 const Foot = styled.footer`
+position: absolute;
+bottom: 0;
 padding: 10px;
 text-align: center;
+width: 100%;
 font-family: Ebold;
 `

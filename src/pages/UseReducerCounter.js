@@ -1,4 +1,5 @@
 import { useReducer, useState, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import { Button, Input, InputCont, Reset, SVG, Count, Counter, Head, Body } from '../styles/styles'
 
 export default function UseReducerCounter() {

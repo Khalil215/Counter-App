@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { Reset, SVG, Count, Counter, Head, Body } from '../styles/styles'
+import { Helmet } from "react-helmet-async";
+
 export default function ErrorBoundary() {
 
   const [value, setValue] = useState(0)

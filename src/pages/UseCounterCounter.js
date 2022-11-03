@@ -1,7 +1,7 @@
 import { useRef, useState } from "react"
 import useCounter from "../hooks/useCounter"
 import { Button, Input, InputCont, Reset, SVG, Count, Counter, Head, Body } from '../styles/styles'
-
+import { Helmet } from "react-helmet-async";
 
 export default function UseCounterCounter() {
 

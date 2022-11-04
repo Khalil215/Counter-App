@@ -1,3 +1,25 @@
+<div align="center">
+  
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./Images/AltSchool_DarkLogo.svg">
+    <img alt="AltSchool Logo" src="./Images/AltSchool_LightLogo.svg" width="50%">
+  </picture>
+ 
+</div>
+
+<h1 align="center">
+  Frontend Second Semester Examination Project
+</h1>
+
+---
+
+<!-- About The Project -->
+## About This Project
+
+Setup a custom counter hook with increment, decrement, reset, setValue functions with a valid UI and Implement a combination of states with a useReducer that implements a counter with the four evident features in the custom hook -  increment, decrement, reset, setValue. Implement a page for the custom hook, useReducer, 404, and a page to test error boundary and good SEO.
+
+[PROJECT LINK](https://counter-app-alpha-one.vercel.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

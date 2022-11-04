@@ -1,15 +1,15 @@
 <h1 align="center">
-  Frontend Second Semester Examination Project Q2
+  Frontend Second Semester Examination Project
 </h1>
 
 ---
 
 <!-- About The Project -->
-## About This Project
+## Question Two(2)
 
 Setup a custom counter hook with increment, decrement, reset, setValue functions with a valid UI and Implement a combination of states with a useReducer that implements a counter with the four evident features in the custom hook -  increment, decrement, reset, setValue. Implement a page for the custom hook, useReducer, 404, and a page to test error boundary and good SEO.
 
-[PROJECT LINK](https://counter-app-alpha-one.vercel.app/)
+<u>**[PROJECT LINK](https://counter-app-alpha-one.vercel.app/)**</u>
 
 # Getting Started with Create React App
 

@@ -9,7 +9,7 @@ export default function Home() {
     <Helmet>
       <title>Counter App - AltSchool Africa Second Semester Examination </title>
       <meta name="description" content=" Setup a custom counter hook with increment, decrement, reset, setValue functions with a valid UI and Implement a combination of states with a useReducer that implements a counter with the four evident features in the custom hook -  increment, decrement, reset, setValue." />
-      <link rel="canonical" href="/" />
+      <link rel="canonical" href="https://counter-app-alpha-one.vercel.app/" />
     </Helmet>
     <Body>
       <Head>AltSchool Africa Second Semester Examination</Head>
@@ -47,7 +47,7 @@ text-shadow: 0.5px 0.5px 2px black;
 font-size: 20px;
 }
 `
-const Ques = styled.h3`
+const Ques = styled.h2`
 margin-top: 80px;
 text-align: center;
 @media (max-width: 868px) {

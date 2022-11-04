@@ -48,7 +48,7 @@ export default function UseCounterCounter() {
       <Helmet>
         <title>useCounter Counter App - AltSchool Africa Second Semester Examination</title>
         <meta name="description" content=" Setup a custom counter hook with increment, decrement, reset, setValue functions with a valid UI " />
-        <link rel="canonical" href="/counter1" />
+        <link rel="canonical" href="https://counter-app-alpha-one.vercel.app/counter1" />
       </Helmet>
 
       <Body>

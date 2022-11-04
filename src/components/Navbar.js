@@ -45,11 +45,14 @@ export default function Navbar() {
 
 const Logo = styled.img`
 width: 120px;
+height: 68px;
 @media (max-width: 868px) {
   width: 100px;
+  height: 57px;
 }
 @media (max-width: 520px) {
  width: 80px;
+ height: 45.5px;
 }
 `
 const Nav = styled.nav`

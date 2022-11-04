@@ -14,16 +14,19 @@
 @font-face {
   font-family: Eregular;
   src: url(/public/EuclidFlexRegular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Elight;
   src: url(/public/EuclidFlexLight.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: Ebold;
   src: url(/public/EuclidFlexSemiBold.ttf);
+  font-display: swap;
 }
 
 

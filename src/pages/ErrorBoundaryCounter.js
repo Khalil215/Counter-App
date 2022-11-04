@@ -31,7 +31,7 @@ export default function ErrorBoundary() {
       <Helmet>
         <title>Counter App | Error boundary testing page - AltSchool Africa Second Semester Examination</title>
         <meta name="description" content=" Setup a custom counter hook with increment, decrement, reset, setValue functions with a valid UI and Implement a combination of states with a useReducer that implements a counter with the four evident features in the custom hook -  increment, decrement, reset, setValue." />
-        <link rel="canonical" href="/errorBoundary" />
+        <link rel="canonical" href="https://counter-app-alpha-one.vercel.app/errorBoundary" />
       </Helmet>
 
       <Body>

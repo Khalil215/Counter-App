@@ -4,11 +4,19 @@
     <source media="(prefers-color-scheme: dark)" srcset="./Images/AltSchool_DarkLogo.svg">
     <img alt="AltSchool Logo" src="./Images/AltSchool_LightLogo.svg" width="50%">
   </picture>
- 
+
+  <p align="center">
+    <a href="https://github.com/Ze-Austin/altschool-python#readme"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Ze-Austin/altschool-python/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Ze-Austin/altschool-python/issues">Request Feature</a>
+  </p>
 </div>
 
 <h1 align="center">
-  Frontend Second Semester Examination Project
+  Frontend Second Semester Examination Project Q2
 </h1>
 
 ---

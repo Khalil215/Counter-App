@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 import useCounter from "../hooks/useCounter"
-import { Button, Input, InputCont, Reset, SVG, Count, Counter, Head, Body } from '../styles/styles'
+import { Button, Input, InputCont, Reset, SVG, Count, Counter, Head, Body, Svgbtn } from '../styles/styles'
 import { Helmet } from "react-helmet-async";
 
 export default function UseCounterCounter() {
@@ -22,7 +22,7 @@ export default function UseCounterCounter() {
       return
     }
 
-    if (firstInput.current.value <= 0) {
+    if (firstInput.current.value < 0) {
       setError('*Start value cannot be set as negative value')
       return
     }
@@ -56,17 +56,23 @@ export default function UseCounterCounter() {
 
         <Counter>
           <Count>
-            <SVG className={disableDecrement ? 'disable' : 'hover'} onClick={decrement} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </SVG>
+            <Svgbtn>
+              <SVG className={disableDecrement ? 'disable' : 'hover'} onClick={decrement} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </SVG>
+            </Svgbtn>
             <div>{value}</div>
-            <SVG onClick={increment} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="hover">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-            </SVG>
+            <Svgbtn>
+              <SVG onClick={increment} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="hover">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </SVG>
+            </Svgbtn>
           </Count>
-          <Reset onClick={reset} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="hover">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-          </Reset>
+          <Svgbtn>
+            <Reset onClick={reset} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="hover">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </Reset>
+          </Svgbtn>
         </Counter>
 
         <div>

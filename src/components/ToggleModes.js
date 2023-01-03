@@ -3,6 +3,7 @@ import { Red, Theme, Green, Blue, Purple, Cyan } from '../styles/styles'
 
 export default function ToggleModes() {
   return (
+    <>
     <Theme>
       <Green></Green>
       <Red></Red>
@@ -11,6 +12,8 @@ export default function ToggleModes() {
       <Cyan></Cyan>
 
     </Theme>
+    </>
+    
 
   )
 }

@@ -1,5 +1,13 @@
 import styled, { css } from "styled-components"
 
+
+const Appp = styled.div`
+  font-family: Eregular;
+  background-image: linear-gradient(to bottom right, ${p=>p.theme.light}, ${p=>p.theme.dark});
+  height: 100vh;
+  color: ${p=>p.theme.dark};
+`
+
 const Logo = styled.img`
 width: 120px;
 height: 68px;
@@ -33,6 +41,9 @@ justify-content: space-around;
 font-size: 19px;
 font-family: Ebold;
 align-self: flex-end;
+&.navs{
+  color: ${p=>p.theme.dark}
+}
 
 @media (max-width: 868px) {
   display: none;
@@ -57,7 +68,7 @@ font-family: Ebold;
   display: grid;
 }
 @media (max-width: 520px) {
-  font-size: 18px;
+  font-size: 20px;
   grid-template-rows: repeat(4,50px);
 }
 `
@@ -67,8 +78,8 @@ display: none;
 cursor: pointer;
 transition: .5s;
 &:hover{
-  color: var(--light);
-}
+  color: ${p=>p.theme.light};
+} 
 @media (max-width: 868px) {
   display: unset;
 }
@@ -80,18 +91,19 @@ transition: .5s;
 const Body = styled.div`
 width: 80%;
 margin: 20px auto;
+
 `
 const Svgbtn = styled.button`
 outline: none;
 background-color: transparent;
 border: none;
-color: var(--dark);
+color: ${p=>p.theme.dark};
 `
 const Head = styled.h1`
 font-family: Ebold;
 text-align: center;
 @media (max-width: 520px) {
-  font-size: 20px;
+  font-size: 22px;
 }
 ${p => p.small && css`
 margin-top: 30px;
@@ -123,7 +135,7 @@ box-shadow: 0px 0px 3px 1px;
 @media (max-width: 520px) {
   width: 100px;
   padding: 11px 2px;
-  font-size: 24px;
+  font-size: 26px;
 }
 `
 
@@ -131,6 +143,12 @@ const SVG = styled.svg`
 width: 28px;
 transition: all ease .3s;
 cursor:pointer;
+&.hover{
+&:hover{ color: ${p=>p.theme.light};}
+}
+&.disable{
+  opacity: .2;
+}
 @media (max-width: 520px) {
   width: 18px;
 }
@@ -143,7 +161,7 @@ margin: 15px auto;
 cursor:pointer;
 transition: all ease .3s;
 &:hover{
-  color: var(--light);
+  color: ${p=>p.theme.light};
 }
 @media (max-width: 520px) {
   width: 25px;
@@ -156,7 +174,7 @@ margin: 10px;
 font-weight: bold;
 font-size: 20px;
 @media (max-width: 520px) {
-  font-size: 16px;
+  font-size: 18px;
 }
 `
 
@@ -167,14 +185,14 @@ outline: none;
 width: 80px;
 font-family: Eregular;
 font-size: 20px;
-color: var(--dark);
+color: ${p=>p.theme.dark};
 border-radius: 20px;
 box-shadow: 0px 0px 3px 1px var(--dark);
 text-align: center;
 padding: 4px 9px;
 margin-left: 10px;
 @media (max-width: 520px) {
-  font-size: 16px;
+  font-size: 18px;
 }
 `
 
@@ -184,8 +202,8 @@ width: 80px;
 padding: 6px 11px;
 background-color: unset;
 font-size: 20px;
-color: var(--dark);
-box-shadow: 0px 0px 3px 1px var(--dark);
+color: ${p=>p.theme.dark};
+box-shadow: 0px 0px 3px 1px ${p=>p.theme.dark};
 border: none;
 border-radius: 8px;
 cursor: pointer;
@@ -193,80 +211,111 @@ font-family: Ebold;
 transition: .4s;
 &:hover{
   width: 150px;
-  color: var(--light);
+  color: ${p=>p.theme.light};
 }
 @media (max-width: 520px) {
-  font-size: 16px;
+  font-size: 18px;
 }
 `
+const Span = styled.span`
+color: ${p=>p.theme.dark};
+&:hover{
+  border-bottom: 1px solid ${p=>p.theme.dark};
+}
+`
+
 const Theme = styled.div`
 position: absolute;
-top:20vh;
+margin-top:50px;
 left:30px;
 display: grid;
 gap:7px;
+@media (max-width: 520px) {
+  gap: 10px;
+  left:25px;
+}
 `
 
 const Red = styled.button`
-width: 28px;
-height: 28px;
+width: 30px;
+height: 30px;
 border-radius: 50%;
 background-color: tomato;
-border: 1px solid var(--light);
+border: 1px solid ${p=>p.theme.light};
 cursor: pointer;
 transition: .4s;
 &:hover{
   transform: scale(1.05)
+}
+@media (max-width: 520px) {
+  width: 27px;
+height: 27px;
 }
 `
 const Green = styled.button`
-width: 28px;
-height: 28px;
+width: 30px;
+height: 30px;
 border-radius: 50%;
 background-color: mediumseagreen;
-border: 1px solid var(--light);
+border: 1px solid ${p=>p.theme.light};
 cursor: pointer;
 transition: .4s;
 &:hover{
   transform: scale(1.05)
+}
+@media (max-width: 520px) {
+  width: 27px;
+height: 27px;
 }
 `
 const Blue = styled.button`
-width: 28px;
-height: 28px;
+width: 30px;
+height: 30px;
 border-radius: 50%;
 background-color: dodgerblue;
-border: 1px solid var(--light);
+border: 1px solid ${p=>p.theme.light};
 cursor: pointer;
 transition: .4s;
 &:hover{
   transform: scale(1.05)
+}
+@media (max-width: 520px) {
+  width: 27px;
+height: 27px;
 }
 `
 const Purple = styled.button`
-width: 28px;
-height: 28px;
+width: 30px;
+height: 30px;
 border-radius: 50%;
 background-color: slateblue;
-border: 1px solid var(--light);
+border: 1px solid ${p=>p.theme.light};
 cursor: pointer;
 transition: .4s;
 &:hover{
   transform: scale(1.05)
+}
+@media (max-width: 520px) {
+  width: 27px;
+height: 27px;
 }
 `
 const Cyan = styled.button`
-width: 28px;
-height: 28px;
+width: 30px;
+height: 30px;
 border-radius: 50%;
 background-color: cyan;
-border: 1px solid var(--light);
+border: 1px solid ${p=>p.theme.light};
 cursor: pointer;
 transition: .4s;
 &:hover{
   transform: scale(1.05)
 }
+@media (max-width: 520px) {
+  width: 27px;
+height: 27px;
+}
 `
 
 
-export { Logo, Nav, Navs, Hnavs, Svg, Button, Input, InputCont, Reset, SVG, Count, Counter, Head, Body, Svgbtn, Theme,Red, Green, Blue, Purple, Cyan }
+export { Appp, Logo, Nav, Navs, Hnavs, Svg, Button, Input, InputCont, Reset, SVG, Count, Counter, Head, Body, Svgbtn,Span, Theme,Red, Green, Blue, Purple, Cyan }

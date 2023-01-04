@@ -6,22 +6,34 @@ import UseReducerCounter from "./pages/UseReducerCounter"
 import ErrorBoundaryCounter from "./pages/ErrorBoundaryCounter"
 import NotFound from './pages/NotFound'
 import { ErrorBoundary } from './components/ErrorBoundary'
+import { Appp } from './styles/styles'
+import { useThemeContext } from './components/Context'
+
 
 function App() {
+
+  const {theme} = useThemeContext()
+
   return (
-    <div className="App">
+    <Appp theme={theme}>
+
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path='counter1' element={<UseCounterCounter />} />
-            <Route path='counter2' element={<UseReducerCounter />} />
-            <Route path='errorBoundary' element={<ErrorBoundary><ErrorBoundaryCounter /></ErrorBoundary>} />
-            <Route path='*' element={<NotFound />} />
-          </Route>
-        </Routes>
+      
+          <Routes>
+            <Route path='/' element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path='counter1' element={<UseCounterCounter />} />
+              <Route path='counter2' element={<UseReducerCounter />} />
+              <Route path='errorBoundary' element={<ErrorBoundary><ErrorBoundaryCounter /></ErrorBoundary>} />
+              <Route path='*' element={<NotFound />} />
+            </Route>
+          </Routes>
+       
+
       </BrowserRouter>
-    </div>
+
+
+    </Appp>
   );
 }
 

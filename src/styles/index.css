@@ -7,8 +7,6 @@
 :root {
   --light: #85FEA1;
   --dark: #023B1F;
-  /* --light: rgb(97, 255, 97);
-  --dark: rgb(49, 126, 49); */
 }
 
 @font-face {
@@ -39,15 +37,11 @@ body {
   user-select: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: Eregular;
-  background-image: linear-gradient(to bottom right, var(--light), var(--dark));
-  height: 100vh;
-  color: var(--dark);
+
 }
 
 a {
   text-decoration: none;
-  color: var(--dark);
   transition: all ease .4s;
 }
 
@@ -57,20 +51,25 @@ a {
 
 .navs a:hover,
 .p a:hover {
-  border-bottom: 1px solid var(--dark);
+  border-bottom: 1px solid black;
 }
 
 .hnavs a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .link {
-  color: var(--light);
-  border-bottom: 1.5px solid var(--dark);
+  color: black;
+  border-bottom: 1.5px solid black;
+}
+
+.nolink{
+  color: unset;
+  opacity: .8;
 }
 
 .hlink {
-  color: var(--light);
+  color: black;
 }
 
 .noshow {
@@ -83,14 +82,6 @@ a {
   transform: translateY(0);
 }
 
-.disable {
-  opacity: .2;
-}
-
-.hover:hover {
-  color: var(--light);
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   appearance: none;
@@ -99,6 +90,5 @@ input::-webkit-inner-spin-button {
 
  ::placeholder {
   font-family: Elight;
-  color: var(--dark);
   opacity: .4;
 }

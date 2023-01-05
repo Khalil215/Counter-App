@@ -104,8 +104,8 @@ const Head = styled.h1`
 font-family: Ebold;
 text-align: center;
 @media (max-width: 520px) {
-  font-size: 28px;
-  margin-top: 33px;
+  font-size: 24px;
+  margin-top: 30px;
 }
 ${p => p.small && css`
 margin-top: 30px;

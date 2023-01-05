@@ -28,7 +28,7 @@ export default function UseCounterCounter() {
       setError('*Start value cannot be set as negative value')
       return
     }
-    if (secondInput.current.value < 0) {
+    if (secondInput.current.value <= 0) {
       setError('*Count by cannot be set as negative value')
       return
     }

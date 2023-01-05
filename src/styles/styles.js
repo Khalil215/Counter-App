@@ -17,8 +17,8 @@ height: 68px;
   height: 57px;
 }
 @media (max-width: 520px) {
- width: 80px;
- height: 45.5px;
+ width: 90px;
+ height: 50px;
 }
 `
 const Nav = styled.nav`

@@ -4,6 +4,7 @@ import styled, { css } from "styled-components"
 const Appp = styled.div`
   font-family: Eregular;
   background-image: linear-gradient(to bottom right, ${p=>p.theme.light}, ${p=>p.theme.dark});
+  transition: .5s;
   height: 100vh;
   color: ${p=>p.theme.dark};
 `
@@ -104,6 +105,7 @@ font-family: Ebold;
 text-align: center;
 @media (max-width: 520px) {
   font-size: 22px;
+  margin-top: 30px;
 }
 ${p => p.small && css`
 margin-top: 30px;
@@ -118,7 +120,7 @@ padding: 20px;
 display: grid;
 justify-content: center;
 @media (max-width: 520px) {
-  margin: 20px auto;
+  margin: 0px auto;
 }
 `
 const Count = styled.div`
@@ -143,14 +145,12 @@ const SVG = styled.svg`
 width: 28px;
 transition: all ease .3s;
 cursor:pointer;
+
 &.hover{
 &:hover{ color: ${p=>p.theme.light};}
 }
 &.disable{
   opacity: .2;
-}
-@media (max-width: 520px) {
-  width: 18px;
 }
 `
 
@@ -164,8 +164,8 @@ transition: all ease .3s;
   color: ${p=>p.theme.light};
 }
 @media (max-width: 520px) {
-  width: 25px;
-  margin-bottom: 80px;
+  width: 30px;
+  margin-bottom: 30px;
 }
 `
 
@@ -231,8 +231,10 @@ left:30px;
 display: grid;
 gap:7px;
 @media (max-width: 520px) {
-  gap: 10px;
-  left:25px;
+  display: flex;
+  top:24px;
+  z-index:2;
+  gap:5px;
 }
 `
 
@@ -240,7 +242,7 @@ const Red = styled.button`
 width: 30px;
 height: 30px;
 border-radius: 50%;
-background-color: tomato;
+background-color: red;
 border: 1px solid ${p=>p.theme.light};
 cursor: pointer;
 transition: .4s;
@@ -300,11 +302,11 @@ transition: .4s;
 height: 27px;
 }
 `
-const Cyan = styled.button`
+const Gray = styled.button`
 width: 30px;
 height: 30px;
 border-radius: 50%;
-background-color: cyan;
+background-color: gray;
 border: 1px solid ${p=>p.theme.light};
 cursor: pointer;
 transition: .4s;
@@ -318,4 +320,4 @@ height: 27px;
 `
 
 
-export { Appp, Logo, Nav, Navs, Hnavs, Svg, Button, Input, InputCont, Reset, SVG, Count, Counter, Head, Body, Svgbtn,Span, Theme,Red, Green, Blue, Purple, Cyan }
+export { Appp, Logo, Nav, Navs, Hnavs, Svg, Button, Input, InputCont, Reset, SVG, Count, Counter, Head, Body, Svgbtn,Span, Theme,Red, Green, Blue, Purple, Gray }

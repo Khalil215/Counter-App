@@ -1,22 +1,24 @@
 import React from 'react'
-import { Red, Theme, Green, Blue, Purple, Cyan } from '../styles/styles'
+import { Red, Theme, Green, Blue, Purple, Gray } from '../styles/styles'
 import { useThemeContext } from './Context'
 
 export default function ToggleModes() {
 
-  const {theme}= useThemeContext()
+  const { theme, setThemeColor, themeColor } = useThemeContext()
+  // console.log(themeColor);
   return (
-    <>
-    <Theme>
-      <Green theme={theme}></Green>
-      <Red theme={theme}></Red>
-      <Blue theme={theme}></Blue>
-      <Purple theme={theme}></Purple>
-      <Cyan theme={theme}></Cyan>
 
-    </Theme>
+    <>
+      <Theme>
+        <Green theme={theme} onClick={() => setThemeColor('green')}></Green>
+        <Red theme={theme} onClick={() => setThemeColor('red')}></Red>
+        <Blue theme={theme} onClick={() => setThemeColor('blue')}></Blue>
+        <Purple theme={theme} onClick={() => setThemeColor('purple')}></Purple>
+        <Gray theme={theme} onClick={() => setThemeColor('cyan')}></Gray>
+
+      </Theme>
     </>
-    
+
 
   )
 }

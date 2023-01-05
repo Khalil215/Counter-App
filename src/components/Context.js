@@ -8,8 +8,9 @@ const ThemeContext = createContext();
 const Context = ( {children} )=> {
 
   const [themeColor, setThemeColor] = useState('green')
-  const [light, setLight] = useState('#85FEA1')
-  const [dark, setDark] = useState('#023B1F')
+  const [light, setLight] = useState('')
+  const [dark, setDark] = useState('')
+  const [loadPage, setLoadPage]= useState(false)
 
   useEffect(() => {
 
@@ -18,10 +19,28 @@ const Context = ( {children} )=> {
         setLight('#85FEA1')
         setDark('#023B1F')
         break;
+      case 'blue':
+        setLight('#1bffff')
+        setDark('#2e3192')
+        break;
+      case 'red':
+        setLight('#ff1c1c')
+        setDark('#300000')
+        break;
+      case 'purple':
+        setLight('#c453f3')
+        setDark('#291d3b')
+        break;
+      case 'cyan':
+        setLight('#dcdcdc')
+        setDark('#333333')
+        break;
 
       default:
         break;
     }
+
+    setLoadPage(true)
 
   }, [themeColor])
 
@@ -29,7 +48,7 @@ const Context = ( {children} )=> {
   const theme = { light, dark }
 
   return (
-    <ThemeContext.Provider value={ {theme, setThemeColor}} >{children}</ThemeContext.Provider>
+    <ThemeContext.Provider value={ {theme, setThemeColor, themeColor, loadPage}} >{children}</ThemeContext.Provider>
   )
 }
 

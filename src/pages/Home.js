@@ -37,7 +37,7 @@ margin: 50px auto;
  margin:30px auto;
 }
 @media (max-width: 520px) {
- margin:10px auto;
+ margin:25px auto;
  width: 90%;
 }
 
@@ -49,13 +49,14 @@ text-align: center;
 text-shadow: 0.5px 0.5px 2px black;
 @media (max-width: 520px) {
 font-size: 22px;
+text-shadow: 0.5px 0.5px 1px black;
 }
 `
 const Ques = styled.h2`
 margin-top: 80px;
 text-align: center;
 @media (max-width: 868px) {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 @media (max-width: 520px) {
 font-size: 18px;
@@ -71,7 +72,7 @@ font-size: 18px;
 line-height: 26px;
 
 @media (max-width: 520px) {
-  width: 80%;
+  width: 100%;
   margin: 10px auto;
   font-size: 16px;
   line-height: 24px;

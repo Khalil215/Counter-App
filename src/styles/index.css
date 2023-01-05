@@ -40,6 +40,15 @@ body {
 
 }
 
+*{
+-webkit-tap-highlight-color: transparent;
+}
+
+/* :focus:not(focus-visible){
+  outline:0;
+  box-shadow: none;
+} */
+
 a {
   text-decoration: none;
   transition: all ease .4s;
@@ -70,6 +79,7 @@ a {
 
 .hlink {
   color: black;
+  
 }
 
 .noshow {

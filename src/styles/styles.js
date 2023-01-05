@@ -101,7 +101,7 @@ border: none;
 color: ${p=>p.theme.dark};
 `
 const Head = styled.h1`
-// font-family: Ebold;
+font-family: Ebold;
 text-align: center;
 @media (max-width: 520px) {
   font-size: 28px;
@@ -133,7 +133,7 @@ border-radius: 50px;
 font-family: Ebold;
 font-weight: bold;
 font-size: 30px;
-box-shadow: 0px 0px 3px 1px;
+box-shadow: 0px 0px 3px 1px black;
 @media (max-width: 520px) {
   width: 100px;
   font-size: 28px;
@@ -164,7 +164,7 @@ transition: all ease .3s;
 }
 @media (max-width: 520px) {
   width: 33px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 `
 

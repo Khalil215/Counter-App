@@ -7,8 +7,8 @@ const Appp = styled.div`
   transition: .5s;
   height: 100vh;
   color: ${p=>p.theme.dark};
-  @media (max-width: 520px) {
-    height: 700px;
+  @media (max-width: 620px) {
+    height: 670px;
    }
 `
 
@@ -236,7 +236,7 @@ gap:7px;
   display: flex;
   top:35px;
   z-index:2;
-  gap:5px;
+  gap:7px;
 }
 `
 

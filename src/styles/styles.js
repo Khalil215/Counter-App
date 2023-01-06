@@ -7,7 +7,7 @@ const Appp = styled.div`
   transition: .5s;
   height: 100vh;
   color: ${p=>p.theme.dark};
-  @media (max-width: 620px) {
+  @media (max-width: 720px) {
     height: 670px;
    }
 `

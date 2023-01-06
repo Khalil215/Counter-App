@@ -5,7 +5,7 @@ const Appp = styled.div`
   font-family: Eregular;
   background-image: linear-gradient(to bottom right, ${p=>p.theme.light}, ${p=>p.theme.dark});
   transition: .5s;
-  height: 100vh;
+  height: 700px;
   color: ${p=>p.theme.dark};
 `
 

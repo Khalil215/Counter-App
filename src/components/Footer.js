@@ -15,7 +15,7 @@ padding: 10px;
 text-align: center;
 width: 100%;
 font-family: Ebold;
-@media (max-width: 620px) {
+@media (max-width: 720px) {
   position: unset;
   margin-top: 80px;
 }

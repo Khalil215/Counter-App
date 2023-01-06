@@ -8,7 +8,7 @@ const Appp = styled.div`
   height: 100vh;
   color: ${p=>p.theme.dark};
   @media (max-width: 520px) {
-    height: auto;
+    height: 700px;
    }
 `
 

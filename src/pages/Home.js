@@ -50,13 +50,14 @@ text-shadow: 0.5px 0.5px 2px black;
 @media (max-width: 520px) {
 font-size: 22px;
 text-shadow: 0.5px 0.5px 1px black;
+margin-top: 40px;
 }
 `
 const Ques = styled.h2`
 margin-top: 80px;
 text-align: center;
 @media (max-width: 868px) {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 @media (max-width: 520px) {
 font-size: 18px;

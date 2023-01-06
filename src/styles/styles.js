@@ -5,8 +5,11 @@ const Appp = styled.div`
   font-family: Eregular;
   background-image: linear-gradient(to bottom right, ${p=>p.theme.light}, ${p=>p.theme.dark});
   transition: .5s;
-  height: 700px;
+  height: 100vh;
   color: ${p=>p.theme.dark};
+  @media (max-width: 520px) {
+    height: auto;
+   }
 `
 
 const Logo = styled.img`
@@ -105,7 +108,7 @@ font-family: Ebold;
 text-align: center;
 @media (max-width: 520px) {
   font-size: 24px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 ${p => p.small && css`
 margin-top: 30px;
@@ -164,7 +167,7 @@ transition: all ease .3s;
 }
 @media (max-width: 520px) {
   width: 33px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 `
 
@@ -231,7 +234,7 @@ display: grid;
 gap:7px;
 @media (max-width: 520px) {
   display: flex;
-  top:24px;
+  top:35px;
   z-index:2;
   gap:5px;
 }

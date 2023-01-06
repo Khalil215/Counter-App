@@ -15,4 +15,9 @@ padding: 10px;
 text-align: center;
 width: 100%;
 font-family: Ebold;
+@media (max-width: 520px) {
+  position: relative;
+bottom: none;
+  margin-top: 100px;
+}
 `

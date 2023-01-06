@@ -30,7 +30,7 @@ export default function NotFound() {
 }
 
 const ErrorDiv = styled.div`
-margin: 30px auto;
+margin: 100px auto 180px auto;
 width: 80%;
 display: grid;
 grid-template-columns: 1fr 1fr;
